@@ -7,8 +7,6 @@ from routers import stable_diffusion
 
 def initialize_stable_diffusion():
     import sys
-    import os
-    # print(os.path.join(os.path.dirname(__file__), 'stable-diffusion-webui'))
     sys.path.append('stable-diffusion-webui')
     from importlib import import_module
     import_module("modules.paths")
